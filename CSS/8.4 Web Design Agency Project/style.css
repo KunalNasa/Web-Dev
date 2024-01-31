@@ -9,10 +9,6 @@ body {
 .main {
   flex: 1;
 }
-.logo{
-  display: block;
-  float: left;
-}
 h1 {
   font-size: 5rem;
 }
@@ -25,22 +21,40 @@ footer {
   color: violet;
 }
 
-.title-image{
+.tile-image{
   height: 200px;
   float: left;
-
+  margin-right: 50px;
 }
 
-.left
-{
+.left{
   float: left;
 }
 .right{
   float: right;
 }
+.card{
+  width: 45%;
+}
 
-.card img{
-  width: 100%;
-  display: inline;
-  object-fit: cover;
+@media (max-width: 680px) {
+  .logo{
+    width: 100px;
+  }
+  .card{
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  .card img{
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  h1{
+    font-size: 3.5rem;
+    text-align: center;
+  }
 }
