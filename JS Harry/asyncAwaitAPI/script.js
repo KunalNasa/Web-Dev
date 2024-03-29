@@ -63,6 +63,7 @@
 
 
 
+// NOTE : Await is called only in async functions
 
 // promise practice
 let x = new Promise((resolve, reject) => {
