@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    max-width: 50vw;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px 0px 3px 3px;
+}
+.thumb-section{
+    width: 18vw;
+    height: 10vw;
+}
+.thumb-section img{
+    border-radius: 5px;
+}
+.image-section{
+    position: relative;
+}
+.image-section span{
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 3px;
+    z-index: 10;
+    right: 20px;
+    top: 115px;
+}
+
+.title-section span{
+    padding: 10px 15px 10px 0px;
+}

@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.4;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center;
+    height: 50px;
+}
+
+nav img{
+    color: red;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    z-index: 10;
+    margin: 20px 0px 0px 0px;
+
+}
+nav button{
+    position: relative;
+    z-index: 10; /*will be bright and on top layer of screen */
+}
+.hero{
+    height: calc(100% - 50px); /*equal to the height of parent div - height of navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    position: relative; /*will make text pop out */
+    padding: 0 20px;
+    gap: 10px;
+
+}
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.separation{
+    width: 100vw;
+    height: 7px;
+    background-color: rgb(69, 67, 67);
+}
+.btn{
+    color: white;
+    position: relative;
+    z-index: 10;
+    background-color: black;
+    opacity: 0.8;
+    height: 32px;
+    width: 124px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-weight: bolder;
+
+
+}
+.btn-red{
+    border: none;
+    background-color: rgb(229, 9, 20);
+    opacity: 1;
+    height: 58.5px;
+    width: 209px;
+    font-size: 20px;
+}
+.btn-red-sm{
+    border: none;
+    margin: 0px 0px 0px 20px;
+    width: 76px;
+    opacity: 1;
+    background-color: red;
+}
+.e-add{
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    margin: 0px 0px 0px 20px;
+    opacity: 1;
+    width: 386px;
+    /* height: 56px; */
+    background-color: black;
+    opacity: 0.6;
+    margin: 0px 5px 0px 0px;
+    border-radius: 3px;
+    padding: 17px 0px 17px 15px;
+    color: white;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+
+.sec-img{
+    position: relative;
+    margin: 15px 0px 0px 0px;
+}
+.sec-img img {
+    position: relative;
+    width: 555px ;
+    z-index: 10;
+}
+.sec-img video{
+    position: absolute;
+    top: 86px;
+    right: 77px;
+    width: 405px;
+}
+
+.enjoy{
+    display: flex;
+    flex-direction: column; /*so that text (in span) will render column wise */
+    gap: 10px;
+}
+.enjoy :first-child{
+
+    font-size: 48px;
+    font-weight: bolder;
+}
+.enjoy :nth-child(2)
+{
+    font-size: 24px;
+}
+
+#sartaj{
+    position: absolute;
+    /* if position is absolute the margin does not work and we use top right bottom
+    left to adjust the div */
+    top: 51px;
+    right: 98px;
+    width: 363px;
+}
+
+.add-items{
+    display: flex;
+    justify-content:space-around;
+    position: absolute;
+    width: 270px;
+    height: 100px;
+    bottom: 35px;
+    left: 140px;
+    border: 2px solid gray;
+    z-index: 10;
+    background-color: black;
+    border-radius: 10px;
+}
+.add-items img{
+    width: 20%;
+    padding: 8px 0px 4px 10px;
+}
+
+.strange{
+    display: flex;
+    flex-direction: column; /*so that text (in span) will render column wise */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 10px 10px 20px; */
+}
+.strange :first-child{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.strange :nth-child(2)
+{
+    font-size: 16px;
+    color: #0071eb;
+}
+#giffy{
+    height: 50px;
+    padding-top: 25px;
+}
+.faq{
+    text-align: center;
+    color: white;
+}
+.questions{
+    display: flex;
+    font-weight: 500;
+    font-size: 24px;
+    flex-direction: row;
+    background-color: rgb(45, 45, 45);
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 10px;
+    width: 80vw;
+    height: 100px;
+    cursor: pointer;
+    
+
+}
+.questions img{
+    padding-right: 20px;
+}
+
+.faq p{
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 15px 15px;
+}
+.faq p2{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 10px 10px 10px;
+}
+
+.faqbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.faqbox :hover{
+    transition: all 1.5s ease-out;
+    background-color: gray;
+    border: 1px solid white;
+}
+#second-box{
+    margin: 30px 30px 80px 30px;
+}
+
+footer{
+    color: white;
+    padding: 34px;
+}
+footer p{
+    margin: 30px 0px 2px 126px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.footer-items{
+    display: flex;
+    padding: 10px 10px 20px 10px;
+    flex-direction: column;
+}
+footer a{
+    color: white;
+    margin: 7px 7px 7px 7px;
+}
+.footer button{
+    margin: 10px 0px 30px 16px;
+}
+footer p2{
+    margin: 30px 0px 150px 126px;
+}
+
+@media screen and (max-width: 1300px) {
+    .first{
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .faq button{
+        margin: 34px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        max-width: 80vw;
+        margin: auto;
+    }
+    .hero> :first-child{
+        font-weight: bolder;
+        font-size: 28px;
+        text-align: center;
+    }
+    .hero> :nth-child(2){
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+    }
+    .hero> :nth-child(3){
+        font-weight: 400;
+        font-size: 10px;
+        text-align: center;
+    }
+    
+   
+}
