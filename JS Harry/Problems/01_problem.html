@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="order"></div>
+    <img src="./imgsvg.svg" alt="">
+
+    <script>
+      async function delay(num) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            num.innerHTML = "Order Placed";
+            clearInterval(num.intervalId); // Clear the interval
+            resolve(); // Resolve the promise
+          }, 3000);
+        });
+      }
+
+      async function main() {
+        let a = prompt("Place your order");
+        let b = document.getElementById("order");
+        b.innerHTML = "Processing your order";
+        let t = setInterval(() => {
+          last = document.getElementById("order");
+          if (last.innerHTML.endsWith("...")) {
+            last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3);
+          } else {
+            last.innerHTML = last.innerHTML + ".";
+          }
+        }, 300);
+
+        // Assign intervalId to the element
+        b.intervalId = t;
+
+        await delay(b);
+        clearInterval(t); // Clear the interval after the delay
+      }
+
+      main();
+    </script>
+  </body>
+</html>
