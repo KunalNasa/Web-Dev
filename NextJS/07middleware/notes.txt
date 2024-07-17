@@ -1,0 +1,8 @@
+jab tak us page tak hamari req pahuche usse pehle hi middleware use change kar
+deta hai.
+/about par req pahuchne se pehle hi agar use change karna chahte hai to middleware
+use karte hai
+
+redirect - directing to the page which you have mentioned in the matcher
+rewrite - the content of page(of which you have rewritten data) will be seen
+on the directed page and with link address showing the address of the directed page

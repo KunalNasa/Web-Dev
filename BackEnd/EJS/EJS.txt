@@ -1,0 +1,5 @@
+EJS, or Embedded JavaScript, is a template engine for Node.js and web
+development that allows users to generate dynamic HTML content by
+embedding JavaScript code within HTML templates. EJS is a simple
+templating language that uses plain JavaScript to generate HTML markup.
+It can also embed JavaScript into HTML pages

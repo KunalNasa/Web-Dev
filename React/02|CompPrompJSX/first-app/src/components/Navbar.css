@@ -1,0 +1,12 @@
+.Nav, ul{
+    display: flex;
+    background-color: beige;
+}
+
+li{
+
+    list-style-type: none;
+}
+ul{
+    gap: 30px;
+}

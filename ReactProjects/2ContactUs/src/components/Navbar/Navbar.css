@@ -1,0 +1,16 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    /* background-color: blanchedalmond; */
+}
+ul{
+    display: flex;
+    gap: 50px;
+    font-size: large;
+    font-weight: 500;
+}
+li{
+    list-style: none;
+}

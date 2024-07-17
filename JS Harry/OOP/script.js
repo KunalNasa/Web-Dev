@@ -17,7 +17,8 @@
 // rabbit.__proto__ = animal; // sets rabbit.[[prototype]] = animal
 
 class animal{
-    constructor(name){
+    constructor(name)
+    {
         this.name = name;
         console.log("Object is created");
     }

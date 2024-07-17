@@ -12,7 +12,6 @@ let prom1 = new Promise((resolve, reject) => {
         resolve("Kunal");
     }, 3000);
     
-    
 })
 
 prom1.then((a)=>{

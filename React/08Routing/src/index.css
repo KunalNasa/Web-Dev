@@ -1,0 +1,14 @@
+.red{
+  background-color: red;
+  color: white;
+}
+body{
+  background-color: burlywood;
+}
+
+a li{
+  padding: 30px;
+  margin: 30px;
+  width: 100px;
+  height: 10px;
+}

@@ -11,7 +11,7 @@ console.log("Namaste"); // executed third
 
 setTimeout(() => {
     console.log("hello again");
-}, 0); // it is an asynchronus function, therefore it will be executed after sync func.
+}, 1000); // it is an asynchronus function, therefore it will be executed after sync func.
 
 console.log("Namaste again");
 

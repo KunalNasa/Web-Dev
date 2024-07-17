@@ -1,0 +1,22 @@
+{passArray.length !== 0 && <table class="table-fixed text-center w-full">
+                        <thead className='bg-green-700'>
+                            <tr>
+                                <th className='text-gray-200 font-bold p-2'>Site Name</th>
+                                <th className='text-gray-200 font-bold p-2'>Username</th>
+                                <th className='text-gray-200 font-bold p-2'>Password</th>
+                                <th className='text-gray-200 font-bold p-2'>Modify</th>
+                            </tr>
+                        </thead>
+                    </table>}
+                    {passArray.map(item => (
+                        <table class="table-fixed w-full text-center" key={item.site}>
+                            <tbody className='bg-green-600'>
+                                <tr>
+                                    <td style={{ wordBreak: 'break-all' }} className=' text-gray-200 font-bold p-2 flex items-center justify-center' >{item.site}</td>
+                                    <td style={{ wordBreak: 'break-all' }} className='text-gray-200 font-bold p-2' >{item.username}</td>
+                                    <td style={{ wordBreak: 'break-all' }} className=' text-gray-200 font-bold p-2' >{item.password}</td>
+                                    <td style={{ wordBreak: 'break-all' }} className='text-gray-200 font-bold p-2' ><button onClick={(e) => (handleEdit(e, item.site))} className='text-gray-200 p-1'><TbEdit /></button>
+                                        <button onClick={(e) => { handleDelete(e, item.site) }} className='text-gray-200 p-1'><MdDeleteSweep /></button></td>
+                                </tr>
+                            </tbody>
+                        </table>

@@ -1,0 +1,3 @@
+In next JS everything by default is sever component
+
+add "use client" in header to make a client component

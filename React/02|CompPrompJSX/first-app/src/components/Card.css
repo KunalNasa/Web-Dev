@@ -1,0 +1,7 @@
+.card{
+    width: 20vw;
+    border: 2px solid black;
+    margin: 30px;
+    height: 250px;
+    overflow: hidden;
+}

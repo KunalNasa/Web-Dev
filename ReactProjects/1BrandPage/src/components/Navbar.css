@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: green; */
+  margin: 5px;
+}
+nav button{
+    padding: 0px 20px;
+    margin: 15px 5px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+}
+ul{
+    display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 0px 5px 0px 5px;
+  font-size: 30px;
+}

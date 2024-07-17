@@ -52,31 +52,51 @@
 
  
 
-// // data.then((v) => { 
-// //     console.log(data)
+// data.then((v) => { 
+//     console.log(data)
 
-// //     console.log("process data")
+//     console.log("process data")
 
-// //     console.log("task 2")
+//     console.log("task 2")
  
-// // })
+// })
 
 
 
 // NOTE : Await is called only in async functions
 
 // promise practice
-let x = new Promise((resolve, reject) => {
-    var x = Math.random() * 10;
-    if(x > 5)
-    {
-        resolve("The process has been executed");
-    }
-    reject("Failed");
-})
+// let x = new Promise((resolve, reject) => {
+//     var x = Math.random() * 10;
+//     if(x > 5)
+//     {
+//         resolve("The process has been executed");
+//     }
+//     reject("Failed");
+// })
 
-x.then((a) => {
-    alert(a);
-}).catch((b) => {
-    alert(b);
-})
+// x.then((a) => {
+//     alert(a);
+// }).catch((b) => {
+//     alert(b);
+// })
+
+async function test()
+{
+    try {
+        let newPromise = new Promise((resolve, reject) =>
+        {
+        setTimeout(() => {
+            resolve("Error");
+        }, 300);
+        })
+        let data = await newPromise;
+        console.log(data);
+        
+    } catch (error) {
+        console.log("Error Occured")
+    }
+
+}
+
+test();

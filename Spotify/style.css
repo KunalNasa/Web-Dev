@@ -150,17 +150,32 @@ body{
     color: black;
     border: none;
     border-radius: 30px;
-    width: 80px;
+    width: 90px;
     padding: 10px 15px 10px 15px;
     margin-right: 10px;
 
 }
+.autobtn{
+    font-weight: bold;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    margin-right: 10px;
+
+}
+
 .signupbtn:hover{
-    font-size: 15px;
+    background-color: gray;
     cursor:pointer;
 }
 .loginbtn:hover{
-    font-size: 15px;
+    background-color: black;
+    color : white;
+    cursor: pointer;
+}
+.autobtn:hover{
     cursor: pointer;
 }
 .playbar{
